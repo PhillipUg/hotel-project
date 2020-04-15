@@ -15,7 +15,7 @@ class Hotel
   end 
 
   def room_exists?(room)
-    @rooms.keys.include?(room)
+    @rooms.has_key?(room)
   end
 
   def check_in(person, check_in_room)     
@@ -26,19 +26,11 @@ class Hotel
     end
   end
 
-  def has_vacancy?
-    available_space = @rooms.keys.each {|room| room.full?}
-    if available_space == false
-      false
-    else
-      true
-    end
+  def has_vacancy?  
+    @rooms.values.any? {|room| room.available_space > 0}
   end
 
   def list_rooms
-    @rooms.keys.each {|k| puts "#{k} . #{k.available_space}"}
+    @rooms.each {|room, space| puts "#{room} : #{space.available_space}"}
   end
 end
-
-hash = {4=>"100", 2=>"200", 1=> "man"}
-p hash.each {|k,v| puts "#{k} and #{v}"}

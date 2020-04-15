@@ -2,6 +2,7 @@ class Room
   attr_accessor :capacity, :occupants
 
   def initialize(capacity)
+
     @capacity = capacity
     @occupants = []
   end

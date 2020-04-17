@@ -1,0 +1,4 @@
+.rspec 
+spec/ 
+Gemfile 
+Gemfile.lock

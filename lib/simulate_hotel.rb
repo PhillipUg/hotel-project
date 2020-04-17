@@ -1,13 +1,8 @@
-# No need to change or write any code in this file.
-#
-# After you complete all specs, you can simulate your hotel by
-# running this file with `ruby lib/simulate_hotel.rb` in your terminal!
-
 require_relative "hotel"
 require_relative "room"
 
 print "Enter a name for the hotel: "
-hotel = Hotel.new(gets.chomp, "Hopper"=> 2, "Lovelace"=> 2, "Turing"=>1)
+hotel = Hotel.new(gets.chomp, "room1"=> 2, "room2"=> 3, "room3"=>1)
 
 puts "\nWelcome to #{hotel.name}!"
 

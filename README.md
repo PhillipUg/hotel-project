@@ -14,7 +14,7 @@ This is a simple hotel project simulation i built while practicing Object Orient
 
 In this simulation, we begin by asking the user to enter a name for a hotel, then a hotel object is created using the given input.  
 
-Then, we proceed to ask for guests to check into our hotel which has 3 rooms(Hopper, Lovelace & Turing))
+Then, we proceed to ask for guests to check into our hotel which has 3 rooms(room1, room2 & room3))
 
 When a guest is entered, we ask which room the guest wishes to be checked into and then proceed to add them to that particular room unless its full.
 

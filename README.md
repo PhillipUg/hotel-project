@@ -7,10 +7,10 @@
 <br />
 
 
-# hotel-project
+# Simple Hotel Simulation Project
 This is a simple hotel project simulation i built while practicing Object Oriented Programming
 
-## About game & How to play
+## About project
 
 In this simulation, we begin by asking the user to enter a name for a hotel, then a hotel object is created using the given input.  
 
